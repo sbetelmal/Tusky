@@ -25,12 +25,20 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.text.Spanned;
 
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import com.keylesspalace.tusky.entity.Notification;
+import com.keylesspalace.tusky.json.SpannedTypeAdapter;
+import com.keylesspalace.tusky.json.StringWithEmoji;
+import com.keylesspalace.tusky.json.StringWithEmojiTypeAdapter;
+import com.keylesspalace.tusky.network.MastodonAPI;
+import com.keylesspalace.tusky.util.Log;
+import com.keylesspalace.tusky.util.NotificationMaker;
+import com.keylesspalace.tusky.util.OkHttpUtils;
 
 import java.io.IOException;
 
@@ -117,5 +125,9 @@ public class MessagingService extends FirebaseMessagingService {
                 .build();
 
         mastodonAPI = retrofit.create(MastodonAPI.class);
+    }
+
+    public static String getInstanceToken() {
+        return FirebaseInstanceId.getInstance().getToken();
     }
 }

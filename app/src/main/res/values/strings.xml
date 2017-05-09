@@ -14,7 +14,6 @@
     <string name="error_media_upload_opening">That file could not be opened.</string>
     <string name="error_media_upload_permission">Permission to read media is required.</string>
     <string name="error_media_download_permission">Permission to store media is required.</string>
-
     <string name="error_media_upload_image_or_video">Images and videos cannot both be attached to the same status.</string>
     <string name="error_media_upload_sending">The upload failed.</string>
     <string name="error_report_too_few_statuses">At least one status must be reported.</string>
@@ -32,6 +31,7 @@
     <string name="title_mutes">Muted users</string>
     <string name="title_blocks">Blocked users</string>
     <string name="title_follow_requests">Follow Requests</string>
+    <string name="title_edit_profile">Edit your profile</string>
 
     <string name="status_username_format">\@%s</string>
     <string name="status_boosted_format">%s boosted</string>
@@ -59,6 +59,7 @@
     <string name="action_compose">Compose</string>
     <string name="action_login">Login with Mastodon</string>
     <string name="action_logout">Log Out</string>
+    <string name="action_logout_confirm">Do you wish to logout</string>
     <string name="action_follow">Follow</string>
     <string name="action_unfollow">Unfollow</string>
     <string name="action_block">Block</string>
@@ -121,6 +122,8 @@
 
     <string name="link_whats_an_instance">What\'s an instance?</string>
 
+    <string name="login_connection">Connecting…</string>
+
     <string name="dialog_whats_an_instance">The address or domain of any instance can be entered
         here, such as mastodon.social, icosahedron.website, social.tchncs.de, and
         <a href="https://github.com/tootsuite/mastodon/blob/master/docs/Using-Mastodon/List-of-Mastodon-instances.md">more!</a>
@@ -133,10 +136,11 @@
     <string name="dialog_title_finishing_media_upload">Finishing Media Upload</string>
     <string name="dialog_message_uploading_media">Uploading…</string>
     <string name="dialog_download_image">Download</string>
+    <string name="dialog_message_follow_request">Follow request pending: awaiting their response</string>
 
     <string name="visibility_public">Public: Post to public timelines</string>
     <string name="visibility_unlisted">Unlisted: Do not show in public timelines</string>
-    <string name="visibility_private">Private: Post to followers only</string>
+    <string name="visibility_private">Followers-Only: Post to followers only</string>
     <string name="visibility_direct">Direct: Post to mentioned users only</string>
 
     <string name="pref_title_notification_settings">Notifications</string>
@@ -164,6 +168,21 @@
     <string name="notification_title_summary">%d new interactions</string>
 
     <string name="description_account_locked">Locked Account</string>
+
+    <string name="about_title_activity">About</string>
+    <string name="about_application_version">App version: %s</string>
+    <string name="about_project_site">
+        Project website:\n
+        https://tusky.keylesspalace.com
+    </string>
+    <string name="about_bug_feature_request_site">
+        Bug reports &amp; feature requests:\n
+        https://github.com/Vavassor/Tusky/issues
+    </string>
+    <string name="about_tusky_account">Tusky\'s Profile</string>
+
     <string name="status_share_content">Share content of toot</string>
     <string name="status_share_link">Share link to toot</string>
+
+    <string name="state_follow_requested">Follow requested</string>
 </resources>
